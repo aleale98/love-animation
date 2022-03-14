@@ -213,12 +213,12 @@ button.button5:hover{
 
 section{
     position: fixed;
-    
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,1);
     animation: animateBg 50s linear infinite;
+    padding-right: 1%;
 }
 
 @keyframes animateBg{
