@@ -165,7 +165,9 @@ body{
 
 button.button5{
     position: absolute;
-    display:inline-block;
+    display: inline-flex;
+    justify-content: center; /* center the content horizontally */
+    align-items: center;
     border:0.1em solid #000000;
     border-radius:0.12em;
     box-sizing: border-box;
