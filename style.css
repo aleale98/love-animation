@@ -218,7 +218,9 @@ section{
     height: 100%;
     background-color: rgba(0,0,0,1);
     animation: animateBg 50s linear infinite;
-    padding-right: 1%;
+    display: flex;
+    justify-content: center; /* center the content horizontally */
+    align-items: center;
 }
 
 @keyframes animateBg{
