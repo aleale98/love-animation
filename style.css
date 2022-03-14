@@ -342,9 +342,9 @@ span:nth-child(10){
 }
 
 #frase{
-    position: relative;
+    position: absolute;
     color: #FFFFFF;
-    margin-top: 50%;
+    margin-top: 20%;
     margin-left: 45%;
     font-size: 1.5em;
 }
