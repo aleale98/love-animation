@@ -1,5 +1,5 @@
 let timer; 
-let curr = 3; 
+let curr = 6; 
 let myAudio;
 
 function change(){
