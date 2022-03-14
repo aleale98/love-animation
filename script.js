@@ -1,22 +1,32 @@
+let timer; 
+let curr = 3; 
+
+function change(){
+    if(curr >= 0){
+        $("#countdown").html(String(curr));
+        curr = curr - 1;
+    }else{
+        clearInterval(timer); 
+        $(".love").fadeOut();
+        $(".love-1").fadeOut();
+        $(".love-2").fadeOut();
+        $(".back").fadeOut(2500);
+        $("section").fadeIn(2500);
+    }
+}
+
 $(document).ready(function(){
     let run = false;
-    $("#start").on("click", function(){
+    $("#countdown").hide();
+    $("section").hide();
+    $(".button5").on("click", function(){
         $('.love-stop').addClass('love').removeClass('love-stop');
         $('.love-1-stop').addClass('love-1').removeClass('love-1-stop');
         $('.love-2-stop').addClass('love-2').removeClass('love-2-stop');
-        if(!run){
-            $(".love").css("animation-play-state", "running");
-            $(".love-1").css("animation-play-state", "running");
-            $(".love-2").css("animation-play-state", "running");
-            run = true;
-            console.log(run);
-        }else{
-            $(".love").css("animation-play-state", "paused");
-            $(".love-1").css("animation-play-state", "paused");
-            $(".love-2").css("animation-play-state", "paused");
-            run = false;
-            console.log(run);
-        }
+        $('.button5').fadeOut();
+        $("section").hide();
+        $("#countdown").html("10");
+        timer = setInterval(change, 1000); 
 
     });
 });
