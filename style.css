@@ -1,3 +1,8 @@
+body{
+    width: 100%;
+    overflow: hidden;
+}
+
 .back{
     position: fixed;
     width: 100%;
@@ -202,8 +207,8 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background-color: #000000;
+    height: 100%;
+    background-color: rgba(0,0,0,1);
     animation: animateBg 50s linear infinite;
 }
 
@@ -336,3 +341,16 @@ span:nth-child(10){
     animation-duration: 2.25s;
 }
 
+#frase{
+    position: relative;
+    color: #FFFFFF;
+    margin-top: 50%;
+    margin-left: 45%;
+    font-size: 1.5em;
+}
+
+@media all and (min-width: 350px){
+    #frase{
+        font-size: 3em;
+    }
+}
