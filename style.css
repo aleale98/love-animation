@@ -354,7 +354,7 @@ span:nth-child(10){
     margin-top: 20%;
     margin-left: 40%;
     font-size: 1.5em;
-    padding: 1%;
+    padding: 2%;
 }
 
 @media all and (min-width: 350px){
